@@ -37,11 +37,11 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Nav>
       <main>
+        <Contact></Contact>
         <Gallery
           currentCategory={currentCategory}
         ></Gallery>
         <About></About>
-        <Contact></Contact>
       </main>
     </div>
   );
