@@ -7,7 +7,7 @@ afterEach(cleanup);
 
 describe('PhotoList is rendering', () => {
   it('renders', () => {
-    render(<PhotoList/>)
+    render(<PhotoList />)
   });
 
   it('matches snapshot', () => {
