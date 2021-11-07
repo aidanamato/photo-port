@@ -9,7 +9,7 @@ exports[`Gallery is rendering matches snapshot 1`] = `
       Portraits
     </h1>
     <p>
-      portraits
+      Portraits of people in my life
     </p>
     <div>
       <div

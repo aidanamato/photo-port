@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, cleanup} from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import Nav from '..';
@@ -9,6 +9,8 @@ const categories = [
 ]
 const mockCurrentCategory = jest.fn();
 const mockSetCurrentCategory = jest.fn();
+const mockContentSelected = jest.fn();
+const mockSetContentSelected = jest.fn();
 
 afterEach(cleanup);
 
@@ -19,6 +21,8 @@ describe('Nav component', () => {
         categories={categories}
         setCurrentCategory={mockSetCurrentCategory}
         currentCategory={mockCurrentCategory}
+        contentSelected={mockContentSelected}
+        setContentSelected={mockSetContentSelected}
       />
     );
   });
@@ -29,6 +33,8 @@ describe('Nav component', () => {
         categories={categories}
         setCurrentCategory={mockSetCurrentCategory}
         currentCategory={mockCurrentCategory}
+        contentSelected={mockContentSelected}
+        setContentSelected={mockSetContentSelected}
       />
     );
 
@@ -43,6 +49,8 @@ describe('Emoji is visible', () => {
         categories={categories}
         setCurrentCategory={mockSetCurrentCategory}
         currentCategory={mockCurrentCategory}
+        contentSelected={mockContentSelected}
+        setContentSelected={mockSetContentSelected}
       />
     );
 
@@ -57,6 +65,8 @@ describe('links are visible', () => {
         categories={categories}
         setCurrentCategory={mockSetCurrentCategory}
         currentCategory={mockCurrentCategory}
+        contentSelected={mockContentSelected}
+        setContentSelected={mockSetContentSelected}
       />
     );
 
